@@ -2,7 +2,7 @@
 
 Application web de gestion de projets et de tâches développée avec Laravel.
 
-**Membres du groupe :** Raphael JACQ, Théo CORBUN
+**Membres du groupe :** Raphael JACQ, Théo CORBUN, Samy HARRIR
 
 ---
 
