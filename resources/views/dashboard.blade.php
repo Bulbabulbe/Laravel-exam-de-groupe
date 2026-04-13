@@ -10,21 +10,6 @@
     </a>
 </div>
 
-@php
-    $user = auth()->user();
-    if ($user->isAdmin()) {
-        $projects = \App\Models\Project::with('tasks')->latest()->take(5)->get();
-        $totalProjects = \App\Models\Project::count();
-        $totalTasks = \App\Models\Task::count();
-        $doneTasks = \App\Models\Task::where('status', 'done')->count();
-    } else {
-        $projects = \App\Models\Project::where('user_id', $user->id)->with('tasks')->latest()->take(5)->get();
-        $totalProjects = \App\Models\Project::where('user_id', $user->id)->count();
-        $totalTasks = \App\Models\Task::where('user_id', $user->id)->count();
-        $doneTasks = \App\Models\Task::where('user_id', $user->id)->where('status', 'done')->count();
-    }
-@endphp
-
 <div class="row g-4 mb-4">
     <div class="col-md-4">
         <div class="card text-white bg-primary">
