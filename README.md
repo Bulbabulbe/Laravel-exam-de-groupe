@@ -19,7 +19,7 @@ Application web de gestion de projets et tâches développée avec Laravel dans 
 
 ```bash
 git clone <url-du-repo>
-cd Laravel-projet-Raphael-Th-o-Samy
+cd Laravel-exam-de-groupe
 ```
 
 ### 2. Installer les dépendances
